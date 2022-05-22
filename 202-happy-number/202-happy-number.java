@@ -2,7 +2,7 @@ class Solution {
     public boolean isHappy(int n) {
         int sum = 0;
         int counter = 0;
-        while (counter < 10){
+        while (counter < 6){
             while (n > 0){
                 int placeholder = n % 10;
                 sum += Math.pow(placeholder, 2);
