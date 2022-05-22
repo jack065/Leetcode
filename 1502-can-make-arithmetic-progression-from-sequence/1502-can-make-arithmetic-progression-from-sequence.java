@@ -4,8 +4,8 @@ class Solution {
         int difference = arr[1] - arr[0];
         int tester = 0;
         for (int i = 0; i < arr.length-1; i++){
-            tester = arr[i] - arr[i+1];
-            if (difference != Math.abs(tester)){
+            tester = arr[i+1] - arr[i];
+            if (difference != tester){
                 return false;
             }
         }
