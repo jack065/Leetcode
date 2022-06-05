@@ -13,10 +13,6 @@ bool isPalindrome(int x){
         x /= 10;
     }
     
-    if (save == temp){
-        return true;
-    }
-    
-    return false;
+    return (save == temp);
     
 }
