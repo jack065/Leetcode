@@ -1,5 +1,6 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
+        
         hashMap = {}
         
         for i, n in enumerate(nums):
