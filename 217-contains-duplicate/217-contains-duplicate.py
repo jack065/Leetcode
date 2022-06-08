@@ -3,7 +3,6 @@ class Solution:
         
         hashSet = set()
 
-        
         for n in nums:
             if n in hashSet:
                 return True
