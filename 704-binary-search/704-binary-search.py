@@ -1,15 +1,16 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        lower_boundary = 0;
-        upper_boundary = len(nums) - 1
-        while(lower_boundary <= upper_boundary):
-            pivot = (lower_boundary + upper_boundary) // 2 #//    returns a rounded off value compared to /
-            if nums[pivot] == target:
+        upper = len(nums) - 1
+        lower = 0
+        while upper >= lower:
+            pivot = round((upper + lower)/2)
+            if (target > nums[pivot]):
+                lower = pivot + 1
+            elif (target < nums[pivot]):
+                upper = pivot - 1
+            elif (target == nums[pivot]):
                 return pivot
-            if nums[pivot] < target: #target is to the right of pivot
-                lower_boundary = pivot + 1;
-            else:
-                upper_boundary = pivot - 1;
         return -1
+        
         
         
