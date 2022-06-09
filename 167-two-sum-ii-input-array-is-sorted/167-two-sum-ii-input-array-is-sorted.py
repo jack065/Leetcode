@@ -3,7 +3,6 @@ class Solution:
         start = 0
         end = len(numbers) - 1
         
-        
         while start != end:
             summer = numbers[start] + numbers[end]
             if summer > target:
