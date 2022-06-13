@@ -9,5 +9,5 @@ class Solution:
                 # The minimum value at index i is equals to the existing value at i plus the minimum of both of its childs
                 dp[i] = n + min(dp[i], dp[i+1])
                 
-        # Since we did a bottom first search, the value at indedx 0 of dp will return the minimum value after navigating the entire list
+        # Since we did a bottom first search, the value at index 0 of dp will return the minimum value after navigating the entire list
         return dp[0]
