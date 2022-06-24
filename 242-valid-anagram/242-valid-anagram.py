@@ -17,3 +17,6 @@ class Solution:
                 return False
             
         return True
+        
+        # Another way we can approach the problem. We can first sort the two strings then do a direct comparison. If they both are the same, they are anagrams.
+        # return sorted(s) == sorted(t)
